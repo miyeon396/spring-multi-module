@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.example.domain.entity","l":"User"},{"p":"com.example.domain.repository","l":"UserRepository"},{"p":"com.example.domain.service","l":"UserService"}];updateSearchResults();

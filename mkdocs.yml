@@ -72,6 +72,9 @@ markdown_extensions:
   - md_in_html
   - tables
 
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+
 # Page tree
 nav:
   - 홈: index.md
