@@ -49,7 +49,7 @@ subprojects {
             stylesheetFile = file("${rootProject.projectDir}/docs/stylesheets/javadocs.css")
 
             // 헤더/푸터 커스터마이징
-            header = '<a href="../../">← 문서로 돌아가기</a>'
+            header = '<a href="../../../../../api-index">← 문서로 돌아가기</a>'
             footer = 'Spring Multi-Module Project'
         }
         

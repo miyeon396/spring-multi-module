@@ -50,7 +50,7 @@ plugins:
   - minify:
       minify_html: true
   - mermaid2:
-      version: '9.4.3' # only works with version < 10
+      version: '10.9.0' # only works with version < 10
       arguments:
         theme: 'dark'
         themeVariables:
