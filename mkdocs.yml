@@ -13,7 +13,8 @@ copyright: Copyright &copy; 2025 Spring Multi Module Team
 
 # Configuration
 theme:
-  name: material
+#  name: material
+  name: gitbook #참고 https://demun.github.io/mkdocs-tuts/guide/theme/
   language: ko
   features:
     - navigation.tabs

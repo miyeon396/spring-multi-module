@@ -49,6 +49,7 @@ jobs:
         run: |
           pip install mkdocs
           pip install mkdocs-material
+          pip install mkdocs-gitbook
           pip install mkdocs-minify-plugin
           pip install mkdocs-mermaid2-plugin
 
