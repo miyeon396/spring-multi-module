@@ -1,0 +1,16 @@
+dependencies {
+    implementation project(':util-module')
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.bouncycastle:bcprov-jdk18on:1.77'
+    
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+// 이 모듈은 라이브러리이므로 bootJar 비활성화
+tasks.named('bootJar') {
+    enabled = false
+}
+
+tasks.named('jar') {
+    enabled = true
+}

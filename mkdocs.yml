@@ -1,0 +1,105 @@
+site_name: Spring Multi-Module Project Documentation
+site_description: Spring Boot 멀티모듈 프로젝트 문서
+site_author: Spring Multi Module Team
+site_url: https://yourusername.github.io/spring-multi-module/
+
+# Repository
+repo_name: spring-multi-module
+repo_url: https://github.com/yourusername/spring-multi-module
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2025 Spring Multi Module Team
+
+# Configuration
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  font:
+    text: Noto Sans KR
+    code: Roboto Mono
+
+# Plugins
+plugins:
+  - search:
+      lang: ko
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - tables
+
+# Page tree
+nav:
+  - 홈: index.md
+  - 시작하기:
+      - 소개: getting-started/introduction.md
+      - 설치: getting-started/installation.md
+      - 빠른 시작: getting-started/quick-start.md
+  - 모듈:
+      - Util Module: modules/util-module.md
+      - Encrypt Module: modules/encrypt-module.md
+      - Domain Module: modules/domain-module.md
+  - API 문서:
+      - Util Module API: javadoc/util-module/index.html
+      - Encrypt Module API: javadoc/encrypt-module/index.html
+      - Domain Module API: javadoc/domain-module/index.html
+      - 통합 API: javadoc/aggregated/index.html
+  - 개발 가이드:
+      - 아키텍처: development/architecture.md
+      - 코딩 컨벤션: development/coding-conventions.md
+      - 테스트 가이드: development/testing.md
+  - 기여하기: contributing.md
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+  version:
+    provider: mike

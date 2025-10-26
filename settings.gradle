@@ -1,0 +1,5 @@
+rootProject.name = 'spring-multi-module'
+
+include 'util-module'
+include 'encrypt-module'
+include 'domain-module'
