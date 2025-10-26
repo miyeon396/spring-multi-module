@@ -34,6 +34,8 @@ jobs:
       # Gradle Wrapper 설정 (gradlew가 없을 때)
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: 8.5
 
       - name: Generate Javadoc
         run: gradle generateAllJavadocs  # ./gradlew 대신 gradle 사용
