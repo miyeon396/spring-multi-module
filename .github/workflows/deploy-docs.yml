@@ -31,11 +31,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Generate Javadoc
-        run: ./gradlew generateAllJavadocs
 
       - name: Set up Python
         uses: actions/setup-python@v5
