@@ -44,6 +44,13 @@ subprojects {
             docEncoding = 'UTF-8'
             links 'https://docs.oracle.com/en/java/javase/21/docs/api/'
             addStringOption('Xdoclint:none', '-quiet')
+
+            // 커스텀 CSS 추가
+            stylesheetFile = file("${rootProject.projectDir}/docs/stylesheets/javadoc.css")
+
+            // 헤더/푸터 커스터마이징
+            header = '<a href="../../">← 문서로 돌아가기</a>'
+            footer = 'Spring Multi-Module Project'
         }
         
         doLast {
