@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2025 Spring Multi Module Team
 
 # Configuration
 theme:
-#  name: material
-  name: gitbook #참고 https://demun.github.io/mkdocs-tuts/guide/theme/
+  name: material
+#  name: gitbook #참고 https://demun.github.io/mkdocs-tuts/guide/theme/
   language: ko
   features:
     - navigation.tabs
@@ -49,17 +49,6 @@ plugins:
       lang: ko
   - minify:
       minify_html: true
-  - mermaid2:
-      version: '10.9.0' # only works with version < 10
-      arguments:
-        theme: 'dark'
-        themeVariables:
-          primaryColor: '#BB2528'
-          primaryTextColor: '#fff'
-          primaryBorderColor: '#7C0000'
-          lineColor: '#F8B229'
-          secondaryColor: '#006100'
-          tertiaryColor: '#fff'
 
 # Extensions
 markdown_extensions:
